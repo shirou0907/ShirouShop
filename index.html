@@ -155,10 +155,44 @@
                     </ul>
                </nav>
                <!-- Search Navbar -->
+               
                <div class="header-with-search">
-                   <label class="header__mobile-search" for="mobile-search-checkbox">
-                        <i class="header__mobile-search-icon fas fa-search"></i>
-                   </label>
+                   <div class="header-with-double">
+                        <label for="mobile-nav-input" class="mobile-nav-btn">
+                           <i class="fas fa-list"></i>
+                        </label>
+                        <label class="header__mobile-search" for="mobile-search-checkbox">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                        </label>
+                   </div>
+
+                    <label for="mobile-nav-input" class="nav__overley"></label>
+
+                    <input type="checkbox" hidden name="" id="mobile-nav-input" class="mobile-nav-checkbox">
+                    <nav class="nav__mobile">
+                        <label for="mobile-nav-input" class="mobile__nav-close">  
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                        </label>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="" class="nav__mobile-item-link">Tài khoản của tôi</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="" class="nav__mobile-item-link">Danh mục</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="" class="nav__mobile-item-link">Thông báo</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="" class="nav__mobile-item-link">Trợ giúp</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="" class="nav__mobile-item-link">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                   
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -171,6 +205,7 @@
                             </svg>
                         </a>
                     </div>
+                    
                     
                     <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="header__search-checkbox">
                    
@@ -356,8 +391,8 @@
        </header>
        <div class="app_container">
             <div class="grid wide">
-                <div class="grid__row app_contain">
-                    <div class="gird__column-2">
+                <div class="row app_contain sm-gutter">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fas fa-list"></i>
@@ -388,7 +423,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="gird__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet ">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn ">Phổ biến</button>
@@ -419,12 +454,58 @@
                                 </div>
                             </div>
                         </div>
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Tivi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Điện thoại</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Tủ lạnh</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Máy giặt</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Cáp sạc & cáp OTG</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Màn hình</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Pin gắn trong</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Cốc sạc</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đế sạc</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Lò vi sóngsóng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Máy hút bụi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Tab</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Điện gia dụng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Khác</a>
+                                </li>
+                            </ul>
+                        </nav>
 
                         <div class="home-product">
                             <!-- Grid -> Row -> Colume -->
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                 <!-- Product items -->
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/3c50f7d28091bb5fc3602c3fd8894677);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi 4K UHD Samsung 58 inch UA58TU7000KXXV</h4>
@@ -467,7 +548,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/0b135c51d9778d3d06ec20b3196a1a7f_tn);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi Samsung 4K 49 inch UA49RU7300KXXV </h4>
@@ -510,7 +591,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/a1a421a1f71e0aedf28616d210a0047e);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi 4K UHD Samsung 50 inch UA50TU8500KXXV</h4>
@@ -553,7 +634,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/83c352e504548f3a672c762563295eea);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi 4K UHD Samsung 50 inch UA50TU8100KXXV</h4>
@@ -596,7 +677,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/3a91e30e5215dbabd52e826066bf6518);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi Samsung 55 inch QLED 4K QA55Q65TAKXXV</h4>
@@ -639,7 +720,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/87008822dacaf975af218a6f2a11d268);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi Samsung 43 Inch Full HD UA43T6500AKXXV </h4>
@@ -682,7 +763,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/548f8b98f70a0a4db3ee75f714270461);"></div>
                                         <h4 class="home-product-item__name">Smart Tivi LED SAMSUNG 32 Inch UA32T4500AKXXV</h4>
@@ -725,7 +806,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f954968f77f8151e4c47eef5b11d1bc5);"></div>
                                         <h4 class="home-product-item__name">Màn Hình Samsung LU28R550UQEXXV 28" UHD 4K IPS 60Hz 5ms Srgb 95% HDR10 AMD Freesync</h4>
@@ -768,7 +849,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/98f3837b1e6c6fcd39d7ea596a692ffe);"></div>
                                         <h4 class="home-product-item__name">Màn hình cong Samsung LC27RG50FQEXXV 27 inch 240Hz - Hàng chính hãng</h4>
@@ -811,7 +892,7 @@
                                         </div>
                                     </a> 
                                 </div>
-                                <div class="gird__column-2-4">
+                                <div class="col l-2-4 m-3 c-6">
                                     <a class="home-product-item" href="#">  
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/02238f8a25cc10ee818d0d77197ea7be);"></div>
                                         <h4 class="home-product-item__name">Màn Hình Samsung LS24R350FHEXXV 24inch FullHD 5ms 75Hz AMD FreeSync - Hàng Chính Hãng</h4>
@@ -898,8 +979,8 @@
        </div>
        <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="gird__column-2-4">
+                <div class="row">
+                    <div class="col l-2-4 m-3 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -913,7 +994,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="gird__column-2-4">
+                    <div class="col l-2-4 m-3 c-6">
                         <h3 class="footer__heading">Về Blue Shopee</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -927,7 +1008,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="gird__column-2-4">
+                    <div class="col l-2-4 m-3 c-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -941,7 +1022,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="gird__column-2-4">
+                    <div class="col l-2-4 m-3 c-6">
                         <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -964,7 +1045,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="gird__column-2-4">
+                    <div class="col l-2-4 m-3 c-6">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="./assets/img/QRcode.png" alt="Download QR" class="download-qr">
