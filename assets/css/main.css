@@ -117,9 +117,9 @@
 .header__navbar-user-item--separate{
     border-top: 1px solid rgba(0,0,0,0.05);
 }
-.header__navbar-user-item a{
+.header__navbar-user-link{
     text-decoration: none;
-    color: var(text-color);
+    color: var(--text-color);
     font-size: 1.4rem;
     padding: 12px 16px;
     display: block;
