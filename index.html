@@ -157,42 +157,9 @@
                <!-- Search Navbar -->
                
                <div class="header-with-search">
-                   <div class="header-with-double">
-                        <label for="mobile-nav-input" class="mobile-nav-btn">
-                           <i class="fas fa-list"></i>
-                        </label>
                         <label class="header__mobile-search" for="mobile-search-checkbox">
                             <i class="header__mobile-search-icon fas fa-search"></i>
                         </label>
-                   </div>
-
-                    <label for="mobile-nav-input" class="nav__overley"></label>
-
-                    <input type="checkbox" hidden name="" id="mobile-nav-input" class="mobile-nav-checkbox">
-                    <nav class="nav__mobile">
-                        <label for="mobile-nav-input" class="mobile__nav-close">  
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-                        </label>
-                        <ul class="nav__mobile-list">
-                            <li class="nav__mobile-item">
-                                <a href="" class="nav__mobile-item-link">Tài khoản của tôi</a>
-                            </li>
-                            <li class="nav__mobile-item">
-                                <a href="" class="nav__mobile-item-link">Danh mục</a>
-                            </li>
-                            <li class="nav__mobile-item">
-                                <a href="" class="nav__mobile-item-link">Thông báo</a>
-                            </li>
-                            <li class="nav__mobile-item">
-                                <a href="" class="nav__mobile-item-link">Trợ giúp</a>
-                            </li>
-                            <li class="nav__mobile-item">
-                                <a href="" class="nav__mobile-item-link">Đăng xuất</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                   
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -371,6 +338,8 @@
                     </div>
                </div>   
            </div>
+           
+           <!-- Mobile sort -->
            <ul class="header__sort-bar">
                <li class="header__sort-item">
                    <a href="" class="header__sort-link">Liên quan</a>
@@ -387,7 +356,32 @@
                         <i class="header__sort-link-icon fas fa-sort"></i>
                     </a>   
                 </li>
-           </ul>
+           </ul> 
+
+           <!-- Mobile list -->
+           <ul class="nav__mobile-list">
+                <li class="nav__mobile-item nav__mobile-item-active">
+                    <i class="nav__mobile-item-icon fas fa-home"></i>
+                    <span class="nav__mobile-item-label">Trang chủ</span>
+                </li>
+                <li class="nav__mobile-item">
+                    <i class="nav__mobile-item-icon fas fa-list"></i>
+                    <span class="nav__mobile-item-label">Danh mục</span>
+                </li>
+                <li class="nav__mobile-item">
+                    <i class="nav__mobile-item-icon fas fa-search"></i>
+                    <span class="nav__mobile-item-label">Tìm kiếm</span>
+                </li>
+                <li class="nav__mobile-item">
+                    <i class="nav__mobile-item-icon far fa-bell"></i>
+                    <span class="nav__mobile-item-label">Thông báo</span>
+                </li>
+                <li class="nav__mobile-item">
+                    <i class="nav__mobile-item-icon far fa-user"></i>
+                    <span class="nav__mobile-item-label">Cá nhân</span>
+                </li>
+            </ul>
+           
        </header>
        <div class="app_container">
             <div class="grid wide">
@@ -977,6 +971,7 @@
                 </div>
             </div>
        </div>
+       
        <footer class="footer">
             <div class="grid wide">
                 <div class="row">
