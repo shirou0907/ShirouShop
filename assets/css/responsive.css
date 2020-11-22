@@ -123,6 +123,15 @@
     .nav__mobile-list {
         display: flex;
     }
+    .footer .row {
+        text-align: center;
+    }
+    .footer-item__link {
+        display: block;
+    }
+    .footer__bottom {
+        margin-bottom: 50px;
+    }
 
 
 

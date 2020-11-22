@@ -1040,6 +1040,7 @@
     will-change: transform;
     display: block;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .home-product-item:hover {
@@ -1080,20 +1081,23 @@
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 .home-product-item__price-old {
     font-size: 1.2rem;
     text-decoration: line-through;
     color: #666;
-    margin-left: 10px;
+    padding: 0 10px;
 }
 
 .home-product-item__price-current {
     font-size: 1.6rem;
     color: var(--primary-color);
-    margin-left: 10px;
+    padding: 0 10px;
     flex-wrap: wrap;
+
 }
 
 .home-product-item__action {
