@@ -69,12 +69,23 @@
     .header__logo {
         width: unset;
     }
+    .header__logo-img {
+        width: 140px;
+    }
+    .header__cart-icon {
+        font-size: 2.6rem;
+    }
     .header__mobile-search {
         padding: 0 10px;
         display: block;
     }
+    .header__mobile-search-icon {
+        font-size: 2.4rem;
+    }
     .header__cart-notice {
         right: 2px;
+        padding: 1px 4px;
+        font-size: 1rem;
     }
     .header__search {
         position: fixed;
